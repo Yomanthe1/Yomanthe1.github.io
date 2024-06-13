@@ -72,12 +72,12 @@
         function update() {
           /* Increase positionX by 10 HERE */
           positionX = positionX + speed;
-		  if (positionX > boardWidth) {
-			speed = -speed
-		  }
-		  if (positionX < 0) {
-			speed = -speed
-		  }
+          if (positionX > boardWidth) {
+            speed = -speed;
+          }
+          if (positionX < 0) {
+            speed = -speed;
+          }
           moveBoxTo(positionX);
         }
 
@@ -91,11 +91,10 @@
           changeBoxText(points);
           points = points + 1;
           if (speed >= 1) {
-			speed = speed + 3
-		  }
-		  else if (speed <= -1) {
-			speed = speed - 3
-		  }
+            speed = speed + 3;
+          } else if (speed <= -1) {
+            speed = speed - 3;
+          }
         }
       })();
     </script>
